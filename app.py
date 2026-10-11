@@ -963,6 +963,13 @@ def mostra_blocco(
         st.plotly_chart(
             fig,
             use_container_width=True,
+            config={
+                "staticPlot": True,
+                "displayModeBar": False,
+                "scrollZoom": False,
+                "doubleClick": False,
+                "responsive": True,
+            },
         )
 
         st.caption(
